@@ -19,7 +19,7 @@ public class Definition implements Callable<List<WordObject>>{
     @Override
     public List<WordObject> call() throws Exception {
         List<WordObject> results = new ArrayList<>();
-        String query ="SELECT word, type, definition from dictionaryWords where word like ? LIMIT 15 ORDER BY word ASC";
+        String query ="SELECT word, type, definition from dictionaryWords where word like ? ORDER BY word ASC LIMIT 15";
         try (PreparedStatement statement = connection.prepareStatement(query)){
         statement.setString(1, word  + "%");
         try (ResultSet resultSet = statement.executeQuery()){
@@ -31,7 +31,6 @@ public class Definition implements Callable<List<WordObject>>{
             }
         }
         }
-
         return results;
     }
 }
