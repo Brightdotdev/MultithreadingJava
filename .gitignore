@@ -1,0 +1,68 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+
+*.class
+
+# Log files
+*.log
+
+# OS-specific files
+Thumbs.db
+
+# Ignore JavaFX cache files if any are created
+jfx/app
+
+# Ignore IDE-specific files for common editors/IDEs
+# IntelliJ IDEA
+/.idea/
+
+
+
+# Maven-specific ignores
+#maven folder for dependencies if they are cached locally
+.mvn/
+
+# Generated .jar, .war, .ear files
+*.jar
+*.war
+*.ear
+
+# Java crash logs (hs_err_pid)
+hs_err_pid*
